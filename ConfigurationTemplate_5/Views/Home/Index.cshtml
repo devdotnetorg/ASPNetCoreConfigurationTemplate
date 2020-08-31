@@ -1,0 +1,16 @@
+﻿@model AppSettings
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1>Десериализация конфигурации в ASP.NET Core</h1>
+    <h4>Добавление значений по умолчанию и валидация конфигурации</h4>
+</div>
+
+<div>
+    <p>
+        Класс ClientConfig, отображение Заголовка
+        = @Model.clientConfig.Value
+    </p>
+</div>
