@@ -26,7 +26,7 @@ namespace ConfigurationTemplate_2
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //Доступ к IConfiguration из другик контроллеров и сервисов
+            //Доступ к IConfiguration из других контроллеров и сервисов
             services.AddSingleton<IConfiguration>(Configuration);
             //Добавление сервиса "ServiceABC"                          
             services.AddScoped<ServiceABC>();

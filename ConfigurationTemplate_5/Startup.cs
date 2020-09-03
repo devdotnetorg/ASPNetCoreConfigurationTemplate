@@ -46,7 +46,6 @@ namespace ConfigurationTemplate_5
         {
             ChangeToken.OnChange(() => Configuration.GetReloadToken(), onChange);
 
-
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

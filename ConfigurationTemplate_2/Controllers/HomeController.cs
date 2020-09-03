@@ -14,13 +14,11 @@ namespace ConfigurationTemplate_2.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ServiceABC _serviceABC;
-
         public HomeController(ILogger<HomeController> logger, ServiceABC serviceABC)
         {
             _logger = logger;
             _serviceABC = serviceABC;
         }
-
         public IActionResult Index()
         {
             return View(_serviceABC);

@@ -15,10 +15,7 @@ namespace ConfigurationTemplate_2.Services
         {
             _configuration = Configuration;
         }
-
         public ServiceABC()
-        {
-
-        }
+        { }
     }
 }

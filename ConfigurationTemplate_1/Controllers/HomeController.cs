@@ -14,7 +14,6 @@ namespace ConfigurationTemplate_1.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ServiceABC _serviceABC;
-
         public HomeController(ILogger<HomeController> logger, ServiceABC serviceABC)
         {
             _logger = logger;

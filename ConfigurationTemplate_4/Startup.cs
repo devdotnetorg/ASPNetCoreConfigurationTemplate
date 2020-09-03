@@ -28,6 +28,7 @@ namespace ConfigurationTemplate_4
         public void ConfigureServices(IServiceCollection services)
         {
             Services = services;
+            //Считаем секцию AppSettings из конфигурации
             var appSettings = Configuration.GetSection("AppSettings").Get<AppSettings>();
             appSettings.ClientConfigBuild();
             SingletonAppSettings singletonAppSettings = SingletonAppSettings.Instance;

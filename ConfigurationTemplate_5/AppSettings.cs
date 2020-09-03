@@ -27,14 +27,12 @@ namespace ConfigurationTemplate_5
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
             List<ValidationResult> errors = new List<ValidationResult>();
-
             if (string.IsNullOrWhiteSpace(this.Parameter1))
             {
                 errors.Add(new ValidationResult("Не указан параметр Parameter1. Задано " +
                     "значение по умолчанию DefaultParameter1 ABC"));
                 this.Parameter1 = "DefaultParameter1 ABC";
             }
-
             if (string.IsNullOrWhiteSpace(this.Parameter2))
             {
                 errors.Add(new ValidationResult("Не указан параметр Parameter2. Задано " +
